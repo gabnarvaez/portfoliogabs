@@ -1,0 +1,47 @@
+.contact {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.input label,
+.input input,
+.input textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input input,
+.input textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.input textarea {
+    resize: vertical;
+}
+
+.input input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input input[type="submit"]:hover {
+    background-color: #45a049;
+}

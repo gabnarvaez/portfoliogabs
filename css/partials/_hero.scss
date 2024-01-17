@@ -1,0 +1,30 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px ; /* Margin to counterbalance child margins */
+    gap: 20px
+}
+
+.hero-right {
+    flex: 1;
+    margin: 40px /* Margin on each side */
+   
+}
+
+.hero-left {
+    flex: 1;
+    margin: 30px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse; /* Cambia el orden de los elementos */
+        margin: 20px;
+    }
+
+    .hero-left,
+    .hero-right {
+        margin: 20px 0;
+    }
+}

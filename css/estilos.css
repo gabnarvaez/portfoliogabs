@@ -1,0 +1,272 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+
+.hearder {
+  align-items: center;
+}
+
+.h1 {
+  color: white;
+  background-color: black;
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  font-family: "Athiti", sans-serif;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.h3 {
+  color: white;
+  background-color: #252121;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  font-family: "Athiti", sans-serif;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.H2 {
+  text-align: center;
+}
+
+.h4 {
+  font: font;
+  color: colorcool;
+  size: 150%;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px; /* Margin to counterbalance child margins */
+  gap: 20px;
+}
+
+.hero-right {
+  flex: 1;
+  margin: 40px;
+}
+
+.hero-left {
+  flex: 1;
+  margin: 30px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; /* Cambia el orden de los elementos */
+    margin: 20px;
+  }
+  .hero-left,
+  .hero-right {
+    margin: 20px 0;
+  }
+}
+.col-md-4 {
+  border-style: solid;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+  margin: 1rem;
+  background-color: rgb(254, 247, 247);
+}
+
+.contact {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.input label,
+.input input,
+.input textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input input,
+.input textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.input textarea {
+  resize: vertical;
+}
+
+.input input[type=submit] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.mapita {
+  display: flex;
+  gap: 40px;
+  margin-left: 30px;
+}
+
+.findme {
+  text-align: center;
+}
+
+.location-text {
+  font-size: 140%;
+  margin-right: 50px;
+  font-style: initial;
+}
+
+.pinguino {
+  width: 375px;
+  height: 375px;
+  border: 2px solid #000;
+  transform: translate(70px, 40px);
+  transition: 0.5sec;
+}
+
+.pinguino:hover {
+  transform: rotateZ(45deg);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: "Athiti", sans-serif;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.social-links {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.contact-info h4,
+.social-links h4 {
+  margin-bottom: 15px;
+}
+
+.contact-info p,
+.social-links ul {
+  margin-bottom: 10px;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links ul li {
+  margin-bottom: 8px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.pinguino:hover {
+  transform: rotateZ(45deg);
+}
+
+.card-body:hover {
+  opacity: 0.5;
+}
+
+.hero {
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+.grids {
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+.contact {
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+.mapita {
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}/*# sourceMappingURL=estilos.css.map */

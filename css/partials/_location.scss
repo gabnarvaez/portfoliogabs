@@ -1,0 +1,29 @@
+.mapita {
+    display: flex;
+    gap: 40px;
+    margin-left: 30px;
+}
+
+.findme{
+    text-align: center;
+}
+
+.location-text{
+    font-size: 140%;
+    margin-right: 50px;
+    font-style: initial;
+}
+
+
+.pinguino{
+    width: 375px;
+    height: 375px;
+    border: 2px solid #000; 
+    transform: translate(70px, 40px);
+    transition: .5sec;
+ }
+ 
+ .pinguino:hover{
+    transform: rotateZ(45deg);
+ }
+
