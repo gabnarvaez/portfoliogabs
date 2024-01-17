@@ -269,4 +269,78 @@
     transform: scaleY(1);
     transform-origin: 100% 0%;
   }
+}
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 48%; /* Set width for tablet size (2 grids per row) */
+  }
+}
+/* Media query for mobile */
+@media (max-width: 576px) {
+  .col-md-4 {
+    width: 100%; /* Set width for mobile (1 grid per row) */
+  }
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 480px) {
+  .contact {
+    padding: 10px;
+  }
+  .input input,
+  .input textarea {
+    padding: 6px;
+  }
+  .input input[type=submit] {
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 768px) {
+  .mapita {
+    display: block; /* Cambia a display block para apilar verticalmente */
+    margin-left: auto; /* Centra en dispositivos móviles */
+    margin-right: auto; /* Centra en dispositivos móviles */
+    text-align: center; /* Centra el texto en dispositivos móviles */
+    gap: 20px; /* Ajusta el espacio entre elementos */
+  }
+  .location-text {
+    font-size: 120%; /* Reduce el tamaño de la fuente */
+    margin-right: 0; /* Elimina el margen derecho */
+  }
+}
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; /* Cambia el orden de los elementos */
+    margin: 20px;
+  }
+  .hero-left,
+  .hero-right {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pokedance {
+    max-width: 100%;
+  }
+  .tiktok-embed {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer-container {
+    align-items: center;
+  }
+  .contact-info,
+  .social-links {
+    width: 100%;
+    text-align: center;
+  }
+  .social-links ul {
+    padding-left: 0;
+  }
+  .social-links ul li {
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

@@ -30,17 +30,20 @@
 
 @media (max-width: 768px) {
     .mapita {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        margin-left: 0; /* Adjust margin for better centering */
-        align-items: center; /* Center items */
-        gap: 20px; /* Adjust gap for better spacing */
+      display: block; /* Cambia a display block para apilar verticalmente */
+      margin-left: auto; /* Centra en dispositivos móviles */
+      margin-right: auto; /* Centra en dispositivos móviles */
+      text-align: center; /* Centra el texto en dispositivos móviles */
+      gap: 20px; /* Ajusta el espacio entre elementos */
     }
-
+  
     .location-text {
-        font-size: 120%; /* Reduce font size */
-        margin-right: 0; /* Remove right margin */
+      font-size: 120%; /* Reduce el tamaño de la fuente */
+      margin-right: 0; /* Elimina el margen derecho */
     }
-}
+  }
+  
+  
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -68,7 +71,7 @@
 
   @media (max-width: 768px) {
     .footer-container {
-      align-items: center; /
+      align-items: center; 
     }
   
     .contact-info,
