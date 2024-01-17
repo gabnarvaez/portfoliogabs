@@ -1,0 +1,87 @@
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .col-md-4 {
+      width: 48%; /* Set width for tablet size (2 grids per row) */
+    }
+  }
+
+  /* Media query for mobile */
+  @media (max-width: 576px) {
+    .col-md-4 {
+      width: 100%; /* Set width for mobile (1 grid per row) */
+    }
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 480px) {
+    .contact {
+        padding: 10px;
+    }
+
+    .input input,
+    .input textarea {
+        padding: 6px;
+    }
+
+    .input input[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mapita {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin-left: 0; /* Adjust margin for better centering */
+        align-items: center; /* Center items */
+        gap: 20px; /* Adjust gap for better spacing */
+    }
+
+    .location-text {
+        font-size: 120%; /* Reduce font size */
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse; /* Cambia el orden de los elementos */
+        margin: 20px;
+    }
+
+    .hero-left,
+    .hero-right {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pokedance {
+      max-width: 100%;
+    }
+  
+    .tiktok-embed {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      align-items: center; /
+    }
+  
+    .contact-info,
+    .social-links {
+      width: 100%; 
+      text-align: center; 
+    }
+  
+    .social-links ul {
+      padding-left: 0; 
+    }
+  
+    .social-links ul li {
+      margin-bottom: 15px; 
+    }
+  }
