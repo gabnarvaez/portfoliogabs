@@ -69,22 +69,28 @@
     }
   }
 
-  @media (max-width: 768px) {
-    .footer-container {
-      align-items: center; 
-    }
-  
-    .contact-info,
-    .social-links {
-      width: 100%; 
-      text-align: center; 
-    }
-  
-    .social-links ul {
-      padding-left: 0; 
-    }
-  
-    .social-links ul li {
-      margin-bottom: 15px; 
-    }
+/* Estilo para tabletas y dispositivos más grandes */
+@media screen and (min-width: 600px) {
+  .grids {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   }
+}
+
+/* Estilo para computadoras y dispositivos más grandes */
+@media screen and (min-width: 1024px) {
+  .grids {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .milagro {
+      flex-direction: column; /* Stack the elements vertically on smaller screens */
+  }
+
+  .jumbo {
+      margin-left: 0; /* Remove margin on smaller screens */
+  }
+}
